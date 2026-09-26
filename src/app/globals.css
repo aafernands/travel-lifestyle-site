@@ -69,6 +69,8 @@
   --tab-bar-edge: 0.875rem; /* gap to the screen sides */
   --tab-bar-float: 0.75rem; /* gap above the home indicator */
   --tab-bar-item-radius: 0.7rem;
+  /* Unselected tab icon + label: warm ink, 8.9:1 on the cream glass (--muted was 3.5:1). */
+  --tab-bar-inactive: #4a4036;
   --header-bar: 48px;
   --radius-control: 8px;
   --radius-card: 12px;
@@ -83,6 +85,8 @@
 
 html.dark {
   color-scheme: dark;
+  /* Unselected tab icon + label on the dark glass: 11.6:1. */
+  --tab-bar-inactive: #d9cebf;
 
   /* Warm charcoal paper / cream ink */
   --accent: #f59e0b;
@@ -4315,7 +4319,7 @@ html:has(main.plan-flow .plan-workspace) { overflow-x: clip; }
   border: 0;
   border-radius: var(--tab-bar-item-radius);
   background: transparent;
-  color: var(--muted);
+  color: var(--tab-bar-inactive);
   font-family: var(--font-inter), system-ui, sans-serif;
   font-size: var(--type-caption-size);
   font-weight: var(--type-caption-weight);

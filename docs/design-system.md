@@ -87,7 +87,7 @@ Primary is accent fill with on-solid label. Secondary is a white fill, hairline,
   - Fallback: solid `--glass-fallback` when blur is unavailable or reduced transparency is on.
 - **Tab:** `app-tab-bar-item`, rendered with `BottomTabItemBody` (a 20px icon over a 12px / 500 Inter label).
   - Height 44px.
-  - Inactive color is `--muted`; hover is `--heading`.
+  - Inactive color is `--tab-bar-inactive` (`#4a4036`, 8.9:1 on the cream glass; `#d9cebf` in dark mode, 11.6:1); hover is `--heading`.
 - **Selected state:** `aria-current="page"` on links or `aria-selected="true"` on `role="tab"` buttons. It fills the whole tab (icon and label) with `--ink` and `--on-solid` text in a 0.7rem pill.
 - **Positioning:** each bar keeps its own `position: fixed` rule, but both read `--tab-bar-edge` and `--tab-bar-float` and add `env(safe-area-inset-*)`.
 - **Tight fit:** labels truncate and drop to 11px under 360px wide. Don't make the bar taller.
